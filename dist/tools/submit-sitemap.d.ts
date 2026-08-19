@@ -3,7 +3,6 @@ interface SitemapSubmitResult {
     sitemapUrl: string;
     success: boolean;
     error: string | null;
-    note?: string;
 }
 interface SitemapListResult {
     siteUrl: string;
@@ -20,8 +19,11 @@ interface SitemapListResult {
             indexed: number;
         }>;
     }>;
-    note?: string;
 }
+export declare function resolveSitemapRequest(configuredSiteUrl: string, sitemapUrl?: string): {
+    siteUrl: string;
+    sitemapUrl: string;
+};
 export declare function submitSitemap(sitemapUrl?: string): Promise<SitemapSubmitResult>;
 export declare function listSitemaps(): Promise<SitemapListResult>;
 export {};
