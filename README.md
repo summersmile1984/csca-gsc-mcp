@@ -1,5 +1,10 @@
 # Google Search Console MCP Server
 
+> **CSCA fork:** `summersmile1984/csca-gsc-mcp` tracks upstream and is the maintained runtime for
+> `csca-china.com`. It preserves `sc-domain:` properties for Sitemaps API calls instead of rewriting
+> them to an unrelated URL-prefix property. The fork is verified with service-account credentials
+> and includes regression tests for domain-property sitemap requests.
+
 An MCP server for Google Search Console that lets you ask Claude questions about your search data and get real answers. Not raw API rows. Actual analysis.
 
 28 tools. OAuth or service account. Free and open source. Runs on your machine: your data goes straight from this computer to Google, and nothing passes through anyone else's servers.
